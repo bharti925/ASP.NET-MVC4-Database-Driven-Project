@@ -1,0 +1,78 @@
+﻿@model MvcCompanySample.Models.Company
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Company</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Company_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Company_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Postal_Code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Postal_Code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.City)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.City)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.State.State_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.State.State_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country.Country_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country.Country_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Website_Uri)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Website_Uri)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CompanyId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

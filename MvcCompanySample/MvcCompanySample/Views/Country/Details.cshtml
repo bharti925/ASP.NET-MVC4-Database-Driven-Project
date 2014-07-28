@@ -1,0 +1,22 @@
+﻿@model MvcCompanySample.Models.Country
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Country</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Country_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Country_name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.CountryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

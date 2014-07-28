@@ -1,0 +1,74 @@
+﻿@model MvcCompanySample.Models.Contact
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Contact</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Company.Company_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Company.Company_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Function.Function_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Function.Function_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title.Title_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title.Title_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Surname)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Surname)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Last_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Last_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Email_address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Email_address)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Phone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Phone)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cellphone)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cellphone)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

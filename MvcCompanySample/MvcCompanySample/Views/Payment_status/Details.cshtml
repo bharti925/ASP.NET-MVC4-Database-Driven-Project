@@ -1,0 +1,22 @@
+﻿@model MvcCompanySample.Models.Payment_status
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Payment_status</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Payment_status_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Payment_status_name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Payment_statusId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

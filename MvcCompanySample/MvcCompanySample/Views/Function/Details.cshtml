@@ -1,0 +1,22 @@
+﻿@model MvcCompanySample.Models.Function
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Function</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Function_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Function_name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.FunctionId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

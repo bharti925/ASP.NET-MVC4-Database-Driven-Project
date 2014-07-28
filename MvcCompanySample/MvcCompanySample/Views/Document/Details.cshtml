@@ -1,0 +1,92 @@
+﻿@model MvcCompanySample.Models.Document
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Document</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Document_date)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Document_date)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Company.Company_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Company.Company_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mail_category.Mail_category_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mail_category.Mail_category_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Costs_group.Cost_group_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Costs_group.Cost_group_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Payment_status.Payment_status_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Payment_status.Payment_status_name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Reference)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Reference)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Note)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Note)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.AmoutExVat)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.AmoutExVat)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Vat)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Vat)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Amount)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Amount)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Document_uri)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Document_uri)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DocumentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

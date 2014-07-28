@@ -1,0 +1,22 @@
+﻿@model MvcCompanySample.Models.Costs_group
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Costs_group</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Cost_group_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Cost_group_name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Costs_groupId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

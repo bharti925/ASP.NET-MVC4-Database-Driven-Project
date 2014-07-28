@@ -1,0 +1,22 @@
+﻿@model MvcCompanySample.Models.Mail_category
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Mail_category</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Mail_category_name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Mail_category_name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Mail_categoryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
